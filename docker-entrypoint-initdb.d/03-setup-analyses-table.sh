@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "isaac" <<-EOSQL
+psql -v ON_ERROR_STOP=1 --username "isaac" --dbname "isaac" <<-EOSQL
 CREATE TABLE analyses (
  host text,
  taskID text,
